@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+body{
+	background-image: url(../image/bigbg.jpg);
+	background-size:100%; 
+	position: relative;
+	height: 100%;
+	font-family: '微软雅黑';
+}
+.screen{
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	left:70px;
+	right:0;
+	bottom:0;
+	top:50px;
+	margin:auto;
+	/*border:1px solid #000;*/
+}
+.screen .pai{
+	width: 120px;
+	height: 168px;
+	box-shadow: 0 0 2px #000;
+	position: absolute;
+	background-size:100%; 
+	opacity: 0;
+	border-radius: 5px;
+	right:0;
+	top:0;
+}
+.screen .moveright,.screen .moveleft{
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	left:430px;
+	bottom: 80px;
+	z-index: 100;
+	/*background: rgba(255,255,255,0.8);*/
+	border-radius: 10px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+	color: #ffffff;
+	font-family: Arial;
+	background: url("../image/icon.png") no-repeat center;
+}
+.screen .moveleft{
+	bottom: 10px;
+}
+.over,.restart{
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	top:100px;
+	left:60px;
+	z-index: 100;
+	background: rgba(255,255,255,0.8);
+	text-align: center;
+	line-height: 80px;
+	font-size:24px;
+	cursor: pointer;
+	background: url("../image/icon.png") no-repeat center;
+	color: #ffffff;
+	font-family: '微软雅黑';
+}
+.start{
+	top:150px;
+	left:200px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 130px;
+	color: #323851;
+	font-family: '微软雅黑';
+	bottom:300px;
+	font-size: 24px;
+	position: absolute;
+	width: 130px;
+	height:130px;
+	background: url('../image/p2.png') no-repeat center;
+}
+.game{
+	top:400px;
+	left:330px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 130px;
+	color: #323851;
+	font-family: '微软雅黑';
+	bottom:300px;
+	/*margin:auto;*/
+	font-size: 24px;
+	position: absolute;
+	width: 130px;
+	height:130px;
+	background: url('../image/p2.png') no-repeat center;
+}
+.mask{
+	position: fixed;
+	top:150px;
+	left:570px;
+	background: rgba(10, 10, 10, 0.85);
+	z-index: 300;
+	width:600px;
+	height:400px;
+	display: none;
+}
+.mask-inner{
+	width: 560px;
+	position: absolute;
+	right:0;
+	left:0;
+	margin: auto;
+}
+.mask .mask-inner div{
+	text-align: right;
+	font-size: 20px;
+	color: #ffffff;
+	position: absolute;
+	top:10px;
+	right:5px;
+	width: 25px;
+	height: 25px;
+	background: url("../image/close.png") no-repeat center;
+	cursor: pointer;
+}
+.mask .mask-inner h1{
+	text-align: center;
+	padding-top: 36px;
+	color: #fff;
+}
+.mask .mask-inner p{
+	color: #fff;
+	padding-top: 16px;
+	line-height: 40px;
+}
+.over{
+	top:200px;
+	display: none;
+}
+.restart{
+	top:320px;
+	display: none;
+}
